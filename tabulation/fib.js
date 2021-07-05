@@ -9,5 +9,5 @@ const fib = (n) => {
     return table[n];
 }
 
-console.log(fib(5))
+console.log(fib(50))
 // console.log(fib(50))
