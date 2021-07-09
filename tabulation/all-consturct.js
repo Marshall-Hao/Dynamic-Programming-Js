@@ -4,7 +4,7 @@ const allConstruct = (target, wordBank) => {
     .map(() => []);
 
     table[0] = [[]];
-    console.log(table)
+    // console.log(table)
     for (let i = 0; i <= target.length; i++) {
         for (let word of wordBank) {
             if (target.slice(i, i + word.length) === word) {
@@ -18,4 +18,4 @@ const allConstruct = (target, wordBank) => {
 }
 
 console.log(allConstruct('skateboard', ['bo','rd', 'ate','t','ska','sk','boar','d','boa','r']))
-console.log(allConstruct('asddsaasddda',['asd','dsa','aaa','d','a','dd','ddd']))
+console.log(allConstruct('asddsaasdddaaaaaaaaaaaaaa',['asd','dsa','aaa','d','a','dd','ddd']))
